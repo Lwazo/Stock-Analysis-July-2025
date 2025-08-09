@@ -8,7 +8,7 @@ st.title("📈 Stock Market Analysis — July 2025")
 
 @st.cache_data
 def load_data():
-    data = pd.read_csv("C:/Users/lwazo/OneDrive/Desktop/Dateset/project-real world/stock_data_july_2025.csv")
+    data = pd.read_csv("stock_data_july_2025.csv")
     data.dropna(inplace=True)
     data['Date'] = pd.to_datetime(data['Date'], format='%Y-%m-%d')
     data.sort_values(by='Date', ascending=True, inplace=True)  # Ascending for easier date filtering
@@ -103,3 +103,4 @@ if 'PE Ratio' in filtered.columns:
     st.pyplot(fig3)
 else:
     st.info("PE Ratio data not available.")
+
