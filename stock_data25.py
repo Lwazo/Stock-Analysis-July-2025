@@ -1,7 +1,7 @@
 import pandas as pd 
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("C:/Users/lwazo/OneDrive/Desktop/Dateset/project-real world/stock_data_july_2025.csv")
+data = pd.read_csv("stock_data_july_2025.csv")
 
 # here i will be showing first 10 rows
 print(data.head(10))
@@ -57,6 +57,7 @@ plt.xlabel('Date')
 plt.ylabel('Close Price')
 plt.legend()
 plt.show()
+
 
 
 
